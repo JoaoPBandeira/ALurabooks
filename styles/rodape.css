@@ -1,0 +1,59 @@
+.quebra__delinha{
+    margin:0;
+    
+}
+
+.rodapé{
+    padding: 1em;
+}
+
+.rodapé__titulo{
+    color: var(--preto);
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+}
+
+.lista-rodapé{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .rodapé{
+        display: flex;
+        justify-content: space-around;
+    }
+    .lista-rodapé{
+        display: block;
+    }
+    .lista-rodapé__item{
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+    .lista-rodapé__link{
+        margin-left: 0.5em;
+        text-decoration: none;
+        color: var(--cinza-escuro);
+        font-size: 14px;
+    }
+    .lista-rodapé__titulo{
+        font-size: 14px;
+        color: var(--cinza-claro);
+        margin: 2em 0;
+    }
+
+    .rodapé__titulo{
+        font-size: 24px;
+        color: var(--preto);
+        margin: 1em 0;
+    }
+}
+@media screen and (min-width:1728px){
+    .lista-rodapé{
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
+    }
+    .rodapé{
+        padding: 3em 0;
+    }
+}
